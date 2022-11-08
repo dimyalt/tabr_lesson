@@ -4,13 +4,11 @@ package try2;
 public class Garag{
     public static void main(String[] args) {
 
-        //AllCars car0 = new AllCars(0);
-        //AllCars car4 = new AllCars(4);
-        //System.out.println(car0.fillTestData());
-        //System.out.println(car4.fillTestData());
-
         AllCars car = new AllCars();
-        System.out.println(car.fillTestData());
+        //System.out.println(car.fillTestData());
+        System.out.println(car.getManufacture(4));
+        System.out.println(car.clearTestData());
+        //System.out.println(car.getManufacture(1));
 
     }
 }

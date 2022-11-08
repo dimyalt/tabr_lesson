@@ -1,11 +1,12 @@
 package try2;
 
 public class AllCars {
-    Auto[] allAuto = new Auto[10];
+    Auto[] allAuto;
     public AllCars() {
+        Auto[] allAuto = fillTestData();
     }
 
-    Auto[] fillTestData() {
+    public Auto[] fillTestData() {
 
         Auto car1 = new Auto("Chevrolet", "Camaro", "Черный", "SALVP2BG6DH766306", 100000);
         Auto car2 = new Auto("Chevrolet", "Camaro", "Желтый", "1J4GL48KX5W684430", 100000);
@@ -20,6 +21,15 @@ public class AllCars {
 
         return allAuto = new Auto[]{car1, car2, car3, car4, car5, car6, car7, car8, car9, car10};
 
+    }
+
+    public Auto[] clearTestData() {
+        allAuto = null;
+        //for (Auto[] i : allAuto) {
+        //for (int i = 0; i < allAuto.length; i++) {
+        //    System.out.println(allAuto[i].carColor);
+        //}
+        return allAuto;
     }
 
 
