@@ -31,20 +31,15 @@ public class AllCars {
         //}
         return allAuto;
     }
-
-
     public String getManufacture (int id){
         return allAuto[id].carManufacture;
     }
-
     public String getModel(int id){
         return allAuto[id].carModel;
     }
-
     public String getColor(int id){
         return allAuto[id].carColor;
     }
-
     public String getVin(int id){
         return allAuto[id].carVin;
     }
@@ -56,10 +51,12 @@ public class AllCars {
         }
 
     }
-    //return "Марка: " + getManufacture(id)  + ", "
-    //        + "модель: " + getModel(id) + ", "
-    //        + "цвет: " + getColor(id) + ", "
-    //        + "VIN: " + getVin(id) + ", "
-    //        + "цена: " + getPrice(id);
+    public String getCarInfo(int id){
+        return "Марка: " + getManufacture(id)  + ", "
+               + "модель: " + getModel(id) + ", "
+               + "цвет: " + getColor(id) + ", "
+               + "VIN: " + getVin(id) + ", "
+               + "цена: " + getPrice(id);
+    }
 
 }
